@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp">
+
+<head>
+    <meta name="viewport" content="initial-scale=1" />
+
+    <script src="/ngScripts/angular.min.js">
+
+    </script>
+    <script src="/ngScripts/ng-route.js">
+
+    </script>
+    <script src="/ngScripts/ng-animate.js">
+
+    </script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.3/angular-material.min.js"></script>
+    <script src="scripts/portfolioApp.js"></script>
+    <script src="scripts/controllers.js"></script>
+    <script src="scripts/components/container/containerGenerator.js"></script>
+    <script src="scripts/components/container/infoContainer.js"></script>
+     <script src="scripts/components/container/aboutContainer.js"></script>
+       <script src="scripts/components/container/educationContainer.js"></script>
+       <script src="scripts/services/services.js"> </script>
+<script src="scripts/filters/filters.js">    </script>
+<script src="scripts/components/ui/educationInputs.js">    </script>
+<script src="scripts/components/ui/addNewGenerator.js"></script>
+    
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.3/angular-material.min.css">
+    <link rel="stylesheet" href="styles/site.css" />
+
+</head>
+
+<body layout="column" ng-controller="mainCtrl as vm">
+        <md-content flex >
+            <ng-view  flex class="ngFade" />
+        </md-content>
+</body>
+
+</html>

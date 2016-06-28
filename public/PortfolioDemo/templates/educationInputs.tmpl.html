@@ -1,0 +1,106 @@
+<div layout="column">
+    <div layout layout-align="space-between">
+        <md-input-container>
+            <label>Degree</label>
+            <md-select ng-model="newResource.degree">
+                <md-option value="Bachelor of Arts">
+                    Bachelor of Arts
+                </md-option>
+                <md-option value="Bachelor of Science">
+                    Bachelor of Science
+                </md-option>
+                <md-option value="Master of Arts">
+                    Master of Arts
+                </md-option>
+                <md-option value="Master of Science">
+                    Master of Science
+                </md-option>
+                <md-option value="Master of Amazement">
+                    Master of Amazement
+                </md-option>
+            </md-select>
+        </md-input-container>
+        <md-input-container>
+            <label>Field</label>
+            <textarea ng-model="newResource.field" md-maxlength="5"></textarea>
+        </md-input-container>
+        <md-input-container>
+            <label>GPA</label>
+            <textarea ng-model="newResource.GPA" md-maxlength="5"></textarea>
+        </md-input-container>
+    </div>
+    <div layout layout-align="space-between">
+        <md-input-container>
+            <label>School</label>
+            <textarea ng-model="newResource.school" md-maxlength="50"></textarea>
+        </md-input-container>
+        <md-input-container>
+            <label>Graduation Month</label>
+            <md-select ng-model="newResource.gradMonth">
+                <md-option value="January">
+                    January
+                </md-option>
+                <md-option value="February">
+                    February
+                </md-option>
+                <md-option value="March">
+                    March
+                </md-option>
+                <md-option value="April">
+                    April
+                </md-option>
+                <md-option value="May">
+                    May
+                </md-option>
+                <md-option value="June">
+                    June
+                </md-option>
+                <md-option value="July">
+                    July
+                </md-option>
+                <md-option value="August">
+                    August
+                </md-option>
+                <md-option value="September">
+                    September
+                </md-option>
+                <md-option value="October">
+                    October
+                </md-option>
+                <md-option value="November">
+                    November
+                </md-option>
+                <md-option value="December">
+                    December
+                </md-option>
+                <md-option value="Neverary">
+                    Neverary
+                </md-option>
+            </md-select>
+        </md-input-container>
+        <md-input-container>
+            <label>Graduation Year</label>
+            <md-select ng-model="newResource.gradYear">
+                <md-option value="2006">
+                    2006
+                </md-option>
+                <md-option value="2012">
+                    2012
+                </md-option>
+                <md-option value="2013">
+                    2013
+                </md-option>
+                <md-option value="2014">
+                    2014
+                </md-option>
+                <md-option value="2015">
+                    2015
+                </md-option>
+                <md-option value="2016">
+                    2016
+                </md-option>
+            </md-select>
+        </md-input-container>
+    </div>
+
+</div>

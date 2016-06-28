@@ -1,0 +1,29 @@
+    <md-toolbar class="md-theme-light">
+        <h2 layout="row" layout-align="space-between center" class="md-toolbar-tools">
+      <span>{{ ic.type }}</span>
+          <md-button ng-click="ic.showAddDialog($event)" class="md-secondary">Add Info</md-button>
+    </h2>
+    </md-toolbar>
+    <md-card ng-repeat="info in ic.infos | showInfos:ic.portfolioId">
+        <div layout="row" layout-align="end center">   
+            <md-button class="edit" ng-click="ic.showUpdateDialog($event, info.id);"></md-button>
+        </div>
+        
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">Info Id: {{ info.id }}</span>
+                <span class="md-subhead">{{info.info}}</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-actions layout="row" >
+            <div flex layout layout-align="start center">
+                <md-checkbox style="text-align: left; margin:0px;" class="green md-align-bottom-left" ng-change="ic.setGlobally(info)" ng-model="info.global" aria-label="Show Globally">
+                    Show Globally
+                </md-checkbox>
+            </div>
+            <div flex >
+                <md-button ng-click="ic.removeInfo($event, ic.portfolioId, info.id)">Remove from this Portfolio</md-button>
+                <md-button ng-click="ic.deleteInfo($event, info.id)">Delete Info</md-button>
+            </div>
+        </md-card-actions>
+    </md-card>

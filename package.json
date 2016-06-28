@@ -1,0 +1,19 @@
+{
+  "name": "v2prototypes",
+  "private": true,
+  "version": "0.0.0",
+  "description": "This app will hold all prototype changes for v2 of eintern",
+  "main": "server.js",
+  "author": {
+    "name": "ctsodev1",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-zip": "^3.0.2",
+    "minimist": "^1.2.0"
+  }
+}

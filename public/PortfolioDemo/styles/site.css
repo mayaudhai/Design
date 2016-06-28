@@ -1,0 +1,62 @@
+.ngFade{
+               position: absolute;
+top: 0px;
+left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+          }
+          .ngFade.ng-enter, .ngFade.ng-leave {
+            -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+            }       
+            
+ .ngFade.ng-enter {
+    left: 100%;
+    opacity: 0;
+}
+.ngFade.ng-enter-active {
+    left: 0;
+     opacity: 1;
+}
+.ngFade.ng-leave {
+    left: 0;
+      opacity: 1;
+}
+.ngFade.ng-leave-active {
+    left: -100%;
+     opacity: 0;
+}
+
+md-checkbox.md-checked.green .md-icon {
+ background-color: rgba(0, 255, 0, 0.87);
+}
+
+.card-media {
+    background-image: url(icons/about.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+            .edit{
+                    background-image: url(icons/edit.ico);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+            }
+                        .delete{
+                    background-image: url(icons/delete.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: red;
+            }
+            
+                                    .remove{
+                    background-image: url(icons/remove.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: blue;
+            }
+            

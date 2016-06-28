@@ -1,0 +1,34 @@
+         <!--<iframe width="854" height="480" style="max-width: 100%; max-height: 100%" src="https://www.youtube.com/embed/rrT6v5sOwJg" frameborder="0" allowfullscreen></iframe>-->
+      
+      <div flex="100" flex-gt-md="30" layout="column" layout-align="center center"> 
+          
+                 <div style="position: relative" layout="column">    
+         <video src="resources/foodar.mp4" flex="50" >
+               <track kind="subtitles" id="engT" src="resources/testTitles.vtt" srclang="en" label="English">
+         </video>
+         
+         <div layout="column"  class="backdrop">
+                      <task-nav flex="100" layout layout-align="center center"> 
+                      </task-nav>
+               
+               <div layout="column" flex  layout-align="center center">    
+                     <md-button class="play" id="play"> </md-button>
+                     <md-button ng-show="!finished" ng-class="done()" ng-click="updateProgress()"> Complete Task </md-button>
+               </div>
+         </div>
+        </div>
+        
+     <div layout="column" layout-align="center center">   
+          <h2 flex="33"> {{currentTask.name}} Transcript     </h2>
+         <div flex="66" style="position: relative; border: 1px solid grey; max-height: 35vh; text-align: center; overflow-y:scroll; padding: 20px;" name="transcript" id="transcript" >
+
+         </div>
+         <div layout="row" layout-align="center center">
+          <md-button class="md-primary" ng-click="vidRef($event)">Additional Information</md-button>
+          </div>
+         
+     </div>
+          
+      </div>
+      
+      
