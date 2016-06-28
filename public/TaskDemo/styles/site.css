@@ -1,0 +1,136 @@
+.md-toolbar-tools h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: inherit;
+}
+
+md-sidenav.md-locked-open {
+  width: 150px !important;
+  min-width: 150px !important;
+  max-width: 150px !important;
+}
+ 
+         md-whiteframe {
+  background: #F2FCE2;
+  margin: 20px 0px;
+   }
+        h1{
+          text-align: center;
+        }
+.transcript{
+  text-align: left !important;
+  line-height: 16px;
+  font-size: 20px;
+}
+        .backdrop{
+          min-width: 100%;
+          min-height: 100%;
+          top:0;
+          left: 0;
+          position: absolute;
+          background-color: rgba(0, 0, 0, .7);
+        }
+     .md-bar2 {
+          background-color : #5cb85c !important;
+        }
+        .highlight{
+          background-color: yellow;
+        }
+        .next{
+          background: url(icons/rightAC.png);
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+         background-color: white;
+          height: 50px;
+        }
+        
+        .ovB{
+          background-color: rgba(255, 255, 255, .3)
+        }
+        
+        .spacer {
+          min-width: 88px;
+          min-height: 50px;
+          margin: 6px 8px;
+           padding: 0px 6px;
+        }
+        .prev{
+          background: url(icons/rightAC.png);
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          height: 50px;
+          transform: rotateY(-180deg);
+        }
+        
+        .done{
+          background-image: url(http://www.clker.com/cliparts/2/k/n/l/C/Q/transparent-green-checkmark-md.png);
+          background-position: left;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        
+                .docDone{
+          background-image: url(http://www.clker.com/cliparts/2/k/n/l/C/Q/transparent-green-checkmark-md.png) !important;
+          background-position: right !important;
+          background-size: contain !important;
+          background-repeat: no-repeat !important;
+        }
+        
+        .success{
+          background-color: #5cb85c !important;
+          color: white !important;
+        }
+        
+        .fail{
+          background-color: #c9302c !important;
+          color: white !important;
+        }
+        .play{
+          background: url(icons/play.png);
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-color: white;
+          height: 50px;
+        }
+        
+        .home{
+          background: url(icons/home.png);
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-color: white;
+          height: 50px;
+        }
+        
+          .ngFade{
+               position: absolute;
+
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+          }
+          .ngFade.ng-enter, .ngFade.ng-leave {
+            -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+            }       
+            
+ .ngFade.ng-enter {
+    left: 100%;
+    opacity: 0;
+}
+.ngFade.ng-enter-active {
+    left: 0;
+     opacity: 1;
+}
+.ngFade.ng-leave {
+    left: 0;
+      opacity: 1;
+}
+.ngFade.ng-leave-active {
+    left: -100%;
+     opacity: 0;
+}
+            

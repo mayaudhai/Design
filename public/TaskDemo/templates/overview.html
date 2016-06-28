@@ -1,0 +1,21 @@
+
+   <div layout="row" layout-align="center center">
+      <div layout="column" layout-align="center center">
+	   <h1> {{ "Dive 1: " +  printProgress() }}</h1>
+      </div>
+  </div>
+   <div layout="column" layout-align="center center">
+
+      <md-card ng-repeat="task in vm.tasks" ng-class="complete(task)" style="min-width: 90%;">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">{{task.name}}</span>
+            <span class="md-subhead">{{task.desc}}</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button class="md-primary" ng-click="switchTask($index)">Go to Task</md-button>
+        </md-card-actions>
+      </md-card>
+
+  </div>

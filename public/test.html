@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>	
+	<head>	
+
+	</head>
+	<body>
+			<div id="overlay" style="position: relative; width: 300px; height: 150px"></div>
+			
+					<script src="scripts/vtt.js"></script>
+		<script>	
+		 var vtt = "WEBVTT\n\nID\n00:00.000 --> 00:02.000\nhere is my full cue",
+        parser = new WebVTT.Parser(window, WebVTT.StringDecoder()),
+        cues = [],
+        regions = [];
+         parser.oncue = function(cue) {
+           cues.push(cue);
+         };
+         parser.onregion = function(region) {
+           regions.push(region);
+        }
+        parser.parse(vtt);
+        parser.flush();
+
+        var div = WebVTT.convertCueToDOMTree(window, cues[0].text);
+		document.body.appendChild(div);
+        var divs = WebVTT.processCues(window, cues, document.getElementById("overlay"));
+		console.log("test");
+		</script>
+	</body>
+	
+	
+</html>

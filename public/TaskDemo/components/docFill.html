@@ -1,0 +1,69 @@
+    
+      
+        <!--<div flex="50" layout="column" layout-align="center center">
+<h1> Type Project Description</h1>
+<textarea name="" id="" ng-model="currentTask.pDesc" placeholder="Please Enter Project Description" cols="100" rows="10"></textarea>
+<div flex layout layout-align="center center">
+      <md-button class="md-primary" >  Download Document Outline </md-button>
+     <md-button ng-show="!currentTask.done"  ng-class="done()" class="md-raised" ng-click="updateProgress()">  {{complete}}  </md-button>
+</div>
+        </div>-->
+        
+  <!-- the previous tabs container-->
+ <div layout="row" style="text-align: center;"  id="tabs">
+
+
+  <div layout="column" flex="66" id="tabs-2">
+<h1>Project Description</h1>
+<span> Enter Project Description Here </span>
+<textarea name="" id="" ng-model="currentTask.pDesc"  cols="50" rows="10"></textarea>
+<div flex layout layout-align="center center">
+      <md-button class="md-primary" >  View Document </md-button>
+     <md-button ng-show="!finished"  ng-class="done()" class="md-raised" ng-click="updateProgress()">  Complete Task </md-button>
+</div>
+  </div>
+
+  <div flex="33" layout="column" layout-align="center center">
+    <h4 style="margin-bottom: 0px;">  SRS Document</h4>
+      <ul style="min-width: 100%;" >
+    <li class="docDone"><a href="#tabs-1">Introduction</a></li>
+    <li ng-class="docDone(currentTask)"><a href="#tabs-2">Project Description</a></li>
+    <li><a href="#tabs-3">Use Case 1</a></li>
+     <li><a href="#tabs-3">Use Case 2</a></li>
+      <li><a href="#tabs-3">Use Case 3</a></li>
+          <li><a href="#tabs-3">External Interface Requirements</a></li>
+     <li><a href="#tabs-3">Technical Requirements</a></li>
+      <li><a href="#tabs-3">Open Issues</a></li>
+      
+     </ul>
+  </div>
+
+</div>
+
+<!--<div layout="row" flex="90" layout-align="center center">
+  
+  <div flex="66" layout="column"> 
+    <h1> Type Project Description</h1>
+<textarea name="" id="" ng-model="currentTask.pDesc" placeholder="Please Enter Project Description" cols="50" rows="10"></textarea>
+<div flex layout layout-align="center center">
+      <md-button class="md-primary" >  Download Document Outline </md-button>
+     <md-button ng-show="!currentTask.done"  ng-class="done()" class="md-raised" ng-click="updateProgress()">  {{complete}}  </md-button>
+</div>
+  </div>
+  
+  <div flex="33" layout="column"> 
+     <md-button ng-disabled="true" class="md-raised" >  Introduction </md-button>
+     <md-button   class="md-primary">  Project Description </md-button>
+    <md-button  ng-disabled="true"  class="md-raised" > Use Case 1 </md-button>
+     <md-button   ng-disabled="true"  class="md-raised">  Use Case 2 </md-button>
+
+  </div>
+  
+ </div>-->
+
+
+
+          
+    
+
+        

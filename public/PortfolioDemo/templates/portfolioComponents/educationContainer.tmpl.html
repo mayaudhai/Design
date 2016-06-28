@@ -1,0 +1,22 @@
+<md-toolbar class="md-theme-light">
+    <h2 layout="row" layout-align="space-between center" class="md-toolbar-tools">
+      <span>{{ ec.type }}</span>
+      <md-button class="md-secondary" ng-click="ec.showAddDialog($event)"> Add {{ ec.type}} </md-button>
+    </h2>
+</md-toolbar>
+
+<md-card ng-repeat="i in ec.infos | showInfos:ec.portfolioId">
+    <md-card-content>
+        <h3>{{i.degree + ": " + i.field}}</h3>
+        <p>{{i.school}} - {{i.gradMonth}} {{ i.gradYear}} - GPA: {{i.GPA}} </p>
+    </md-card-content>
+    <md-card-actions layout="row" layout-align="space-between">
+        <md-checkbox flex style="" class="green md-align-top-left" ng-change="ec.setGlobally(i)" ng-model="i.global" aria-label="Show Globally">
+            Show Globally
+        </md-checkbox>
+        <md-button flex ng-click="ec.showUpdateDialog($event, i)" class="edit"></md-button>
+        <md-button flex ng-click="ec.removeInfo($event, ec.portfolioId, i.id)" class="remove"></md-button>
+        <md-button flex ng-click="ec.deleteInfo($event, i.id)" class="delete"></md-button>
+
+    </md-card-actions>
+</md-card>

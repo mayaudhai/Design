@@ -1,0 +1,33 @@
+<md-dialog style="min-width: 30vw;" aria-label="Add Info">
+
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2>Update {{ dlg.type }}</h2>
+            <span flex></span>
+            <md-button class="md-icon-button" ng-click="dlg.cancel()">
+                <md-icon md-svg-src="styles/icons/close.svg" aria-label="Close dialog"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <md-dialog-content>
+        <form name="infoForm">
+                <div style="margin-top: 5px;" flex layout layout-align="start center">
+                    <md-checkbox style="text-align: left; margin:0px;" class="green md-align-bottom-left" ng-model="dlg.resource.global" aria-label="Show Globally">
+                        Show Globally
+                    </md-checkbox>
+                </div>
+            <md-input-container input-generator new-resource="dlg.resource" type="dlg.type" class="md-block">
+
+            </md-input-container>
+        </form>
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+        <span flex></span>
+        <md-button ng-click="dlg.cancel()">
+            Cancel
+        </md-button>
+        <md-button ng-click="dlg.updateResource(dlg.resource)" style="margin-right:20px;">
+            Ok
+        </md-button>
+    </md-dialog-actions>
+</md-dialog>

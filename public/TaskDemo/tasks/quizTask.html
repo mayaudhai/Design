@@ -1,0 +1,39 @@
+
+        <task-nav flex="100" layout layout-align="center center"> 
+        </task-nav>
+ <md-list layout="column" layout-align="center center">
+      
+ <h1> Material Design Quiz</h1>     
+   <md-whiteframe class="md-whiteframe-15dp" >
+     <h1> Question 1  </h1>
+      <md-list-item class="md-5-line">
+        <div class="md-list-item-text" layout="column" layout-align="start">
+          <h2>What is the airspeed velocity of an unladen swallow?</h2>
+    <md-radio-group ng-model="currentTask.data.group1">
+      <md-radio-button value="100km/hr" class="md-primary">100km/hr</md-radio-button>
+      <md-radio-button value="150km/hr" class="md-primary">  150km/hr </md-radio-button>
+      <md-radio-button value="9001km/hr" class="md-primary">9001km/hr</md-radio-button>
+      <md-radio-button value="African or European?" class="md-primary">African or European? </md-radio-button>
+    </md-radio-group>
+         
+        </div>
+      </md-list-item>
+  <!--</md-whiteframe>
+   <md-whiteframe class="md-whiteframe-15dp" >
+         <h1> Question 2  </h1>
+      <md-list-item class="md-5-line">
+        <div class="md-list-item-text" layout="column">
+      
+          <h2>ANGULAR IS AMAZING!!!!</h2>
+ <md-radio-group ng-model="data.group2">
+      <md-radio-button value="true" class="md-primary">True</md-radio-button>
+      <md-radio-button value="false" class="md-primary">False</md-radio-button>
+ </md-radio-group>
+        </div>
+      </md-list-item>
+  </md-whiteframe>-->
+      
+    </md-list>
+      <md-list-item class="md-1-line" layout-align="center center">
+        <md-button ng-show="!finished" ng-class="done()" ng-click="updateProgress()"> Complete Task </md-button>
+      </md-list-item>
